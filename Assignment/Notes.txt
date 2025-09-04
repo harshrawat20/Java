@@ -1,0 +1,87 @@
+Interfaces don't contain the actual function they just contain the declaration of methods or functions that the implementing class should implement 
+Static keyword is used to tell that the function is part of a class itself and object creation is not required to use it 
+
+To compile a java file 
+javac Calculate.java // Compile all the classes using this and Calculate.class is generated
+java Calculate // Run the file that has the main method 
+
+To Create a jar file:
+Create a manifest.mf // which Contains the class details having the main function : Main-Class: Calculate
+javac Calculate.java // Compile all the classes using this and Calculate.class is generated
+java Calculate // Run the file that has the main method javac
+jar -cvfm apple.jar manifest.mf *.class // check verbose  file manifest flag 
+
+To run jar:
+java -jar apple.jar
+
+
+Collection Framework
+ArrayList if datatype isn't specified it treats value as object
+For specifying the datatype we use Integer class and not int
+
+ArrayList<Integer> ar=new ArrayList<Integer>();
+Common methods are add , get ,remove , clear, addAll, removeAll, contains , isEmpty, retainAll
+LinkedList to store in form of a rope
+List is a parent class for LinkedList and ArrayList
+toString is used to print the ArrayList objects :
+@Override
+public String toString(){
+return {value}+" "+{Value2}+" "{Value3};// this defines what will be printed when we are trying to print the objects
+}
+HashSet used to store unique values in random order
+LinkedHashSet is used to store unique values in the same order
+HashSet fails in objects or with values with user defined calsses
+
+To overcome this need to implemet two more methods in the user defined class
+@Override
+public int hashCode(){
+return Object.hash(ModelName,price);}
+
+@Override
+public boolean equals(Object obj){
+if(this==obj)
+return true;
+if(obj==null)
+return false;
+if(getClass()!=obj.getClass())
+return false;
+Smartphone other=(Smatphonne) obj;
+return Objects.equals(ModelName,other.ModelName)&& price==other.price; 
+}
+
+
+For custom comparators 
+public class Smartphone implements Comparable<Smartphone>{
+
+@Override
+public int compareTo(Smartphone o)
+{
+if(this.price>o.price)// ascending order sorting
+return 1;
+else if(this.price<o.price)
+return -1;
+else 
+return 0;
+}
+
+HashMap:
+map.put
+map.keySet()
+map.get(key)
+to iterate through both the key and value:
+Map.Entry<Integer,String> entry : map.entrySet()
+entry.getKey(), entry.getValue()
+
+
+Object class is a parent class of all classes in Java
+
+Lambda Expressions help us to make functions :  methods which can exist on their without existence of any class
+
+Functional Innterface : Interface having only 1 abstract method
+public interface Message{
+public void sendMessage();
+}
+Lambda exp work only with functional interfaces
+
+
+
