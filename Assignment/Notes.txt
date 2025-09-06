@@ -83,5 +83,41 @@ public void sendMessage();
 }
 Lambda exp work only with functional interfaces
 
+HTTP SESSION:
+Piece of information that is mainted whenever you use the web application we have same session for full web application
+HTTP Cookies:
+Tokens used when the client interacts with server 
 
+
+Servlet Config:
+We can intially store some key value pairs in web .xml that can be used by our servlets later on
+
+Servlet Context:
+We can create certain parameters/values that will be constant for all the servlets in the web application
+
+
+What are Servlet Filters?
+
+A Servlet Filter is an object that intercepts requests and responses in a Java web application.
+
+It is defined in web.xml or via annotations.
+
+Filters can be used for:
+
+Authentication & authorization
+
+Logging and auditing
+
+Compression
+
+Modifying request or response data
+
+Think of it as a gatekeeper that sits between the client and your servlet.
+
+JSP Scripting Elements :
+To insert java code inside the servlets or JSP
+Three types :
+Scriplet used to insert statements
+Expressions used to write expressions
+Declaration used to declare values
 
