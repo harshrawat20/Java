@@ -121,3 +121,12 @@ Scriplet used to insert statements
 Expressions used to write expressions
 Declaration used to declare values
 
+
+JSP Directives :
+Basically messages that tell the web container how to translate a JSP page into the corresponding servlet
+Three types:
+JSP page directive
+JSP include directive 
+JSP  taglib directive
+
+JSP action tags : they are used to cntrol the flow between the pages inside a jsp 

@@ -7,7 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
- 
+<%-- JSP include directive  --%> 
+<%@ include file="header.jsp" %> <br/>
+
+<%-- JSP page directive  --%> 
+ <a href="home.jsp">Home</a> 
 <%-- Declaration tag syntax --%>
 <%! int num=10; %> 
 
@@ -22,6 +26,9 @@
 Username:<input type="text" name="username"/>
 <input type="submit" value="submit">
 </form>
+
+<%-- JSP include directive  --%> 
+<%@ include file="footer.jsp" %> <br/>
 
 </body>
 </html>

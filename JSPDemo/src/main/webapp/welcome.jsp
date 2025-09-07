@@ -32,7 +32,7 @@ out.print("Welcome using application/context :"+username);
 %>
 
 --%>
-<%--Example of session implicit object --%>
+<%--Example of session implicit object 
 <%
 String username=request.getParameter("username");
 out.print("Welcome using session :"+username);
@@ -45,6 +45,21 @@ session.setAttribute("name",username);
 <form action="home.jsp">
 <input type="submit" value="submit" >
 </form>
+
+--%>
+
+<%--Example of Page Context implicit object --%>
+<%
+
+pageContext.setAttribute("username","Tutedude",PageContext.SESSION_SCOPE);
+%>
+
+<br/>
+
+<form action="home.jsp">
+<input type="submit" value="submit" >
+</form>
+
 
 
 
