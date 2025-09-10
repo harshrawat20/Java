@@ -129,4 +129,22 @@ JSP page directive
 JSP include directive 
 JSP  taglib directive
 
-JSP action tags : they are used to cntrol the flow between the pages inside a jsp 
+JSP action tags : they are used to cntrol the flow between the pages inside a jsp forward and param
+
+
+Java Beans action tag:
+It's simple class:
+a)It shouldn't have parameterised constructor
+b)It should be serializable
+c)It should have getters and setters
+
+Expression Language :
+It is a type of syntax or language that simplifies the accessibility of data in Java . Using it you can use data from various places in avery simplified and structured manner 
+
+JSP MVC:
+Model,view and controller
+Controller : Intercepts all requests
+Model : actual state of the application
+View:How the application looks
+
+

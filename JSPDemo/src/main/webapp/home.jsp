@@ -26,11 +26,23 @@ out.print("Welcome to the home page : " + username);
 %>
 --%>
 
+<%--  For page directive
 <%
 int x=100/0;
 
 
 %>
+--%>
+<%-- Include and param action tag 
+<jsp:include page="header.jsp"></jsp:include>
+<%
+String name =request.getParameter("username");
+out.println("Welcome: "+ name);
+%>
+--%>
+
+<%-- Expression Language--%>
+Company Name: ${param.cName}
 
 
 </body>
